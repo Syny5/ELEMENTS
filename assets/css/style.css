@@ -114,3 +114,54 @@ hr {
  
     text-shadow: 3px 3px 5px black;
 }
+ #alertcookie{
+  background-color: #DCDCDC    ;
+  font-size : 12px;
+}
+
+.inputPlusLess{
+  width: 30%;
+}
+.minusIcons{
+  width: 8.5%
+}
+
+.plusIcons{
+  width: 8.5%
+}
+
+.basketButton{
+  margin-top: 10px;
+  background-color: black;
+  border-radius: 0px;
+  font-weight: bold;
+  border-color: black;
+}
+
+.price{
+  font-style: italic;
+  color: grey;
+}
+
+.total{
+    font-style: italic;
+    color: grey;
+}
+
+.priceValue{
+    font-style: italic;
+    color: grey;
+    margin-left: 5px;
+}
+
+.totalValue{
+    font-style: italic;
+    color: grey;
+    margin-left: 5px;
+}
+
+.euro{
+  font-style: italic;
+  color: grey;
+  margin-left: 5px;
+}
