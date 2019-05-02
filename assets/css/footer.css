@@ -1,0 +1,18 @@
+footer{
+  background-color: #dcdcdc
+}
+
+#legalNotice{
+  color: grey;
+  text-decoration: underline;
+  font-size: 12px;
+}
+
+.titleContacts{
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.bodyContacts{
+  font-size: 14px;
+}

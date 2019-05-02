@@ -1,184 +1,506 @@
 <!DOCTYPE html>
 <html lang="fr">
 
-<head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <title>Hello, world!</title>
-</head>
+  <head>
+      <!-- Required meta tags -->
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <!-- Bootstrap CSS -->
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+      <link rel="stylesheet" href="assets/css/style.css">
+      <link rel="stylesheet" href="assets/css/footer.css">
+      <link rel="stylesheet" href="assets/css/main.css">
+      <title>Hello, world!</title>
+  </head>
 
-<body>
-    <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <!-- Image du site -->
-        <a class="navbar-brand" href="#!"><img src="assets/img/Elements.png" id="imgsite" style="width: 100px;"></img></a>
-        <ul class="navbar-nav mr-auto">
-          <!-- Panier -->
-          <li class="nav-item">
-            <img src="assets/img/com.png" data-toggle="modal" data-target="#exampleModal3" id="panier" alt="Icone de panier" style="width: 35px;">
-          </li>
-          <!-- Compte -->
-          <li class="nav-item">
-            <img src="assets/img/compte.png" id="compte" alt="Icone de compte" style="width: 37px;">
-          </li>
-        </ul>
-        <!-- NAVBAR -->
-        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-          <ul class="navbar-nav mr-auto mt-2 mt-md-0">
-            <li class="nav-item active">
-              <a class="nav-link" href="#!">Accueil<span class="sr-only">(current)</span></a>
-            </li>
-            <div class="dropdown">
-              <button class="btn dropdown-toggle"
-              type="button" id="dropdownMenu1" data-toggle="dropdown"
-              aria-haspopup="true" aria-expanded="false">Catégories
-            </button>
-            <!-- DROPMENU Categories -->
-            <div class="dropdown-menu" aria-labelledby="dropdownMenu1">
-              <a class="dropdown-item" href="#!">Eau plate</a>
-              <a class="dropdown-item" href="#!">Eau gazeuse</a>
-              <a class="dropdown-item" href="#!">Verres</a>
-              <a class="dropdown-item" href="#!">Pack d'eau</a>
-              <a class="dropdown-item" href="#!">Purificateur d'eau</a>
-              <a class="dropdown-item" href="#!">XXXXXXXXXXXXXX</a>
+  <body>
+      <header>
+        <!-- Alerte cookies -->
+        <div id="alertcookie" class="p-3 container-fluid couleur1">
+          <div class="row">
+            <div class="col-12 col-md-10">
+              <a class="cookie"><i class="fas fa-info-circle fa-lg"></i>  Ce site utilise des cookies
+                pour l'analyse, ainsi que pour les contenus et publicités personnalisés. En
+                continuant à naviguer sur ce site, vous acceptez cette utilisation.
+              </a>
+            </div>
+            <div class="col-12 col-md-2 text-right">
+              <a class="cookie"
+              href="https://privacy.microsoft.com/fr-fr/privacystatement#maincookiessimilartechnologiesmodule"
+              target="_blank">En savoir plus</a>
             </div>
           </div>
-          <li class="nav-item">
-            <a class="nav-link" href="#!">Qui sommes-nous ?</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#!">Contact</a>
-          </li>
-            <!-- Modal -->
-            <div class="modal fade" id="exampleModal3" tabindex="-1" role="dialog" aria-labelledby="exampleModal3Label" aria-hidden="true">
-              <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModal3Label">Contenu du panier</h5>
-                    <button type="button"  class="close" data-dismiss="modal" aria-label="Close">
-                      <span aria-hidden="true">&times;</span>
-                    </button>
-                  </div>
-                  <div class="modal-body">
-                    <!-- Contenu du module du panier -->
-                    <p> Produit : </p>
-                    <p> Quantité : </p>
-                    <p> Prix : </p>
-                  </div>
-                  <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Annuler</button>
-                    <button type="button" class="btn btn-info">Procéder au paiement</button>
+        </div>
+        <!-- fin de l'alerte cookie -->
+        <!-- NAVBAR -->
+        <nav class="navbar navbar-expand-sm navbar-light bg-light">
+          <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <!-- Image du site -->
+          <a class="navbar-brand" href="#!"><img src="assets/img/Elements.png" id="imgsite" style="width: 100px;"></img></a>
+          <ul class="navbar-nav mr-auto">
+            <!-- Panier -->
+            <li class="nav-item">
+              <img src="assets/img/com.png" data-toggle="modal" data-target="#exampleModal3" id="panier" alt="Icone de panier" style="width: 35px;">
+            </li>
+            <!-- Compte -->
+            <li class="nav-item">
+              <img src="assets/img/compte.png" id="compte" alt="Icone de compte" style="width: 37px;">
+            </li>
+          </ul>
+          <!-- Navbar collapse (mobile) -->
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+            <ul class="navbar-nav mr-auto mt-2 mt-md-0">
+              <li class="nav-item active">
+                <a class="nav-link" href="#!">Accueil<span class="sr-only">(current)</span></a>
+              </li>
+              <div class="dropdown">
+                <button class="btn dropdown-toggle"
+                type="button" id="dropdownMenu1" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">Catégories
+                </button>
+                <!-- DROPMENU Categories -->
+                <div class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                  <a class="dropdown-item" href="#eauxPlates">Eaux plates</a>
+                  <a class="dropdown-item" href="#eauxPetillantes">Eaux pétillantes</a>
+                  <a class="dropdown-item" href="#conteneurs">Conteneurs</a>
+                </div>
+              </div>
+              <li class="nav-item">
+                <a class="nav-link" href="#whoAreWe">Qui sommes-nous ?</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contacts">Contact</a>
+              </li>
+              <!-- Modal -->
+              <div class="modal fade" id="exampleModal3" tabindex="-1" role="dialog" aria-labelledby="exampleModal3Label" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModal3Label">Contenu du panier</h5>
+                      <button type="button"  class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      <!-- Contenu du module du panier -->
+                      <div class="panel panel-default">
+                        <div class="panel-heading">
+                              Mon panier
+                        </div>
+                        <div class="panel-body text-left">
+                          <div id="cart">
+                          </div>
+                          <div class="clearfix">&nbsp;</div>
+                          <a href="#" onclick="alert('Ok, on va commander !')" class="btn btn-success btn-block" id="order">Commander !</a>
+                        </div>
+                      </div>
+                      <div class="modal-footer">
+                      </div>
+                    </div>
+                    <div class="modal-footer">
+                      <!-- <button type="button" class="btn btn-secondary" data-dismiss="modal">Annuler</button>
+                      <button type="button" class="btn btn-info">Procéder au paiement</button> -->
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
-          </li>
-        </ul>
+            </ul>
+          </div>
+        </nav>
+      </header>
+      <main>
+      <div class="container-fluid ">
+          <div class="row">
+              <div id="carouselExampleIndicators" class=" carousel slide" data-ride="carousel">
+                  <ol class="carousel-indicators">
+                      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                      <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                  </ol>
+                  <div class="carousel-inner">
+                      <div class="carousel-item active">
+                          <img src="assets/img/water1.jpg" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                          <img src="assets/img/water2.jpg" class="d-block w-100" alt="...">
+                      </div>
+                  </div>
+                  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Previous</span>
+                  </a>
+                  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Next</span>
+                  </a>
+              </div>
+          </div>
       </div>
-    </nav>
-    </header>
-
-    <div class="container-fluid ">
-        <div class="row">
-            <div id="carouselExampleIndicators" class=" carousel slide" data-ride="carousel">
-                <ol class="carousel-indicators">
-                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-                </ol>
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img src="assets/img/water1.jpg" class="d-block w-100" alt="...">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="assets/img/water2.jpg" class="d-block w-100" alt="...">
-                    </div>
-                </div>
-                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Previous</span>
-                </a>
-                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Next</span>
-                </a>
-            </div>
-        </div>
-    </div>
-    <div class="container-fluid mt-5 mb-5 ">
-        <h1>About us</h1>
-        <div class="row mt-5 mb-5">
-            <div class="us p-5 col-md-3 offset-3">
-                <img src="assets/img/ElementsNeg.png" alt="" style="width:100px;">
-                <hr>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate, aut! Ea ipsam beatae recusandae cum, id, accusantium facilis voluptatum aut laudantium. Voluptate eaque ex maxime. Ducimus unde magni molestias sed.</p>
-            </div>
-            <div class="col-md-5 row mt-1 ml-1"  style="opacity: 0.7;">
-                <div class="col-md-5 "  id="laptop">
-                    Nos Réseaux
-                </div>
-                <div  class="col-md-5 ml-1"  id="waterdrop">
-                    Nos Engagements
-                </div>
-                <div class="col-md-5 mt-1"  id="montagne">
-                    Nos Sources
-                </div>
-                <div  class="col-md-5 ml-1 mt-1"  id="gallet">
-                    Nos Projets
-                </div>
-            </div>
-        </div>
-         <div class="  row greybg ">
-        <img src="assets/img/evernote.png" alt="" style="width: 200px; height: 200px; opacity: 0.5;" class="col-md-2  ">
-        <p class="col-md-5 mt-4 ml-5 ongrey">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab optio eum necessitatibus dolore, nobis, ipsum repudiandae expedita explicabo quae. Ad aliquid fugiat excepturi quasi veniam, non consectetur amet veritatis, molestias.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab optio eum necessitatibus dolore, nobis, ipsum repudiandae expedita explicabo quae. Ad aliquid fugiat excepturi quasi veniam, non consectetur amet veritatis, molestias.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab optio eum necessitatibus dolore, nobis, ipsum repudiandae expedita explicabo quae. Ad aliquid fugiat excepturi quasi veniam, non consectetur amet veritatis, molestias.Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-            </div>
-    </div>
-    <div class="container">
+      <div class="container-fluid mt-5 mb-5 ">
+        <!-- Partie "Qui sommes-nous" -->
+          <h2 class="titleCategories" id="whoAreWe">Qui sommes-nous ?</h2>
+          <div class="row mt-5 mb-5">
+              <div class="us p-5 col-md-3 offset-3">
+                  <img src="assets/img/ElementsNeg.png" alt="" style="width:100px;">
+                  <hr>
+                  <p>Elements est un distributeur d'eau potable haut-de-gamme. Grâce à nos producteurs installés près des sources les plus riches en amont de la Montagne, la qualité de l'eau reste pure.
+                  Nous pouvons ainsi certifier à nos clients de ne fournir que les eaux les plus naturelles et savoureuses du marché.</p>
+              </div>
+              <div class="col-md-5 row mt-1 ml-1"  style="opacity: 0.7;">
+                  <div class="col-md-5 "  id="laptop">
+                      Nos Réseaux
+                  </div>
+                  <div  class="col-md-5 ml-1"  id="waterdrop">
+                      Nos Engagements
+                  </div>
+                  <div class="col-md-5 mt-1"  id="montagne">
+                      Nos Sources
+                  </div>
+                  <div  class="col-md-5 ml-1 mt-1"  id="gallet">
+                      Nos Projets
+                  </div>
+              </div>
+          </div>
+          <!-- <div class="row greybg">
+              <img src="assets/img/evernote.png" alt="" style="width: 200px; height: 200px; opacity: 0.5;" class="col-md-2  ">
+              <p class="col-md-5 mt-4 ml-5 ongrey">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab optio eum necessitatibus dolore, nobis, ipsum repudiandae expedita explicabo quae. Ad aliquid fugiat excepturi quasi veniam, non consectetur amet veritatis, molestias.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab optio eum necessitatibus dolore, nobis, ipsum repudiandae expedita explicabo quae. Ad aliquid fugiat excepturi quasi veniam, non consectetur amet veritatis, molestias.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab optio eum necessitatibus dolore, nobis, ipsum repudiandae expedita explicabo quae. Ad aliquid fugiat excepturi quasi veniam, non consectetur amet veritatis, molestias.Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+          </div> -->
+      </div>
+      <h2 class="titleCategories" id="eauxPlates">Nos eaux plates</h2>
+      <div class="container d-flex justify-content-around flex-wrap">
+        <!-- Evian Premium-->
+        <div class="card border-info mb-3" style="max-width: 18rem;">
+           <div class="card-header">Evian Premium</div>
+           <div class="card-body text-info">
+             <img class="buttles" src="assets/img/evian.jpg" alt="Bouteille Evian">
+           </div>
+           <!-- Début du footer de la card -->
+           <div class="card-footer text-center font-size-3">
+               <!-- Bouton ajouter au panier -->
+               <span class="prix font-italic">3,95 €</span>
+               <a href="#!" class="btn btn-block btn-primary add basketAdd" data-id="1">
+                   Ajouter au panier
+               </a>
+               <input type="hidden" id="prix-1" value="3.95" />
+           </div>
+           <!-- Fin du footer de la card -->
+         </div>
+         <!-- Volvic Premium -->
          <div class="card border-info mb-3" style="max-width: 18rem;">
-            <div class="card-header">Exemple</div>
+            <div class="card-header">Volvic Gold</div>
             <div class="card-body text-info">
-              <h5 class="card-title">Seul le footer compte</h5>
-              <p class="card-text">Il contient les fonctions JS.</p>
+                <img class="buttles" src="assets/img/volvic.jpg" alt="Bouteille Volvic">
             </div>
             <!-- Début du footer de la card -->
             <div class="card-footer text-center font-size-3">
-              <div class="d-flex justify-content-around">
-                <!-- Partie "Prix : ... €"-->
-                <div class="d-flex justify-content-center">
-                  <p class="price">Prix :</p> <div class="priceValue">5</div> <p class="euro">€</p>
-                </div>
-                <!--  Partie "Total : ... €"-->
-                <div class="d-flex justify-content-center">
-                  <p class="total">Total :</p> <p class="totalValue"></p> <p class="euro">€</p>
-                </div>
-              </div>
-              <!-- Partie icon - /champs de texte/ icon + -->
-              <img src="assets/img/minus-solid.svg" class="minusIcons">
-              <input class="inputPlusLess text-center" type="text">
-              <img src="assets/img/plus-solid.svg" class="plusIcons">
-              <!-- Bouton ajouter au panier -->
-              <button type="button" class="basketButton btn btn-secondary">Ajouter au panier</button>
+                <!-- Bouton ajouter au panier -->
+                <span class="prix font-italic">3,75 €</span>
+                <a href="#!" class="btn btn-block btn-primary add basketAdd" data-id="2">
+                    Ajouter au panier
+                </a>
+                <input type="hidden" id="prix-2" value="3.75" />
             </div>
             <!-- Fin du footer de la card -->
-          
-    </div>
-   
+          </div>
+         <!-- Début de la card -->
+         <div class="card border-info mb-3" style="max-width: 18rem;">
+            <div class="card-header">Contrex Pristine</div>
+            <div class="card-body text-info">
+                <img class="buttles" src="assets/img/contrex.jpg" alt="Bouteille Contrex">
+            </div>
+            <!-- Début du footer de la card -->
+            <div class="card-footer text-center font-size-3">
+                <!-- Bouton ajouter au panier -->
+                <span class="prix font-italic">2,85 €</span>
+                <a href="#!" class="btn btn-block btn-primary add basketAdd" data-id="3">
+                    Ajouter au panier
+                </a>
+                <input type="hidden" id="prix-3" value="2.85" />
+            </div>
+            <!-- Fin du footer de la card -->
+        </div>
+      </div>
+      <h2 class="titleCategories" id="eauxPetillantes">Nos eaux pétillantes</h2>
+      <div class="container d-flex justify-content-around flex-wrap">
+        <!-- Début de la card -->
+        <div class="card border-info mb-3" style="max-width: 18rem;">
+           <div class="card-header">Perrier Master</div>
+           <div class="card-body text-info">
+               <img class="buttles" src="assets/img/perrier.jpg" alt="Bouteille Perrier">
+           </div>
+           <!-- Début du footer de la card -->
+           <div class="card-footer text-center font-size-3">
+               <!-- Bouton ajouter au panier -->
+               <span class="prix font-italic">5,95 €</span>
+               <a href="#!" class="btn btn-block btn-primary add basketAdd" data-id="4">
+                   Ajouter au panier
+               </a>
+                 <input type="hidden" id="prix-4" value="5.95" />
+           </div>
+           <!-- Fin du footer de la card -->
+         </div>
+         <!-- Début de la card -->
+         <div class="card border-info mb-3" style="max-width: 18rem;">
+            <div class="card-header">Salvetat Champion</div>
+            <div class="card-body text-info">
+                <img class="buttles" src="assets/img/salvetat.jpg" alt="Bouteille Salvetat">
+            </div>
+            <!-- Début du footer de la card -->
+            <div class="card-footer text-center font-size-3">
+                <!-- Bouton ajouter au panier -->
+                <span class="prix font-italic">4,95 €</span>
+                <a href="#!" class="btn btn-block btn-primary add basketAdd" data-id="5">
+                    Ajouter au panier
+                </a>
+                <input type="hidden" id="prix-5" value="4.95" />
+            </div>
+            <!-- Fin du footer de la card -->
+          </div>
+         <!-- Début de la card -->
+         <div class="card border-info mb-3" style="max-width: 18rem;">
+            <div class="card-header">Badoit Privilège</div>
+            <div class="card-body text-info">
+                <img class="buttles" src="assets/img/badoit.jpg" alt="Bouteille Badoit">
+            </div>
+            <!-- Début du footer de la card -->
+            <div class="card-footer text-center font-size-3">
+                <!-- Bouton ajouter au panier -->
+                <span class="prix font-italic">4,45 €</span>
+                <a href="#!" class="btn btn-block btn-primary add basketAdd" data-id="6">
+                    Ajouter au panier
+                </a>
+                <input type="hidden" id="prix-6" value="4.45" />
+            </div>
+            <!-- Fin du footer de la card -->
+        </div>
+      </div>
+      <h2 class="titleCategories" id="conteneurs">Conteneurs</h2>
+      <div class="container d-flex justify-content-around flex-wrap">
+        <!-- Début de la card -->
+        <div class="card border-info mb-3" style="max-width: 18rem;">
+           <div class="card-header">Verres à eau suprêmes (x2) (30cl)</div>
+           <div class="card-body text-info">
+               <img class="buttles" src="assets/img/verres.png" alt="Verres à eau">
+           </div>
+           <!-- Début du footer de la card -->
+           <div class="card-footer text-center font-size-3">
+               <!-- Bouton ajouter au panier -->
+               <span class="prix font-italic">6,95 €</span>
+               <a href="#!" class="btn btn-block btn-primary add basketAdd" data-id="7">
+                   Ajouter au panier
+               </a>
+               <input type="hidden" id="prix-7" value="6.95" />
+           </div>
+           <!-- Fin du footer de la card -->
+         </div>
+         <!-- Début de la card -->
+         <div class="card border-info mb-3" style="max-width: 18rem;">
+            <div class="card-header">Gourde en inox V.I.P (1L)</div>
+            <div class="card-body text-info">
+                <img class="buttles" src="assets/img/gourde.jpg" alt="Gourde en inox">
+            </div>
+            <!-- Début du footer de la card -->
+            <div class="card-footer text-center font-size-3">
+                <!-- Bouton ajouter au panier -->
+                <span class="prix font-italic">23,95 €</span>
+                <a href="#!" class="btn btn-block btn-primary add basketAdd" data-id="8">
+                    Ajouter au panier
+                </a>
+                <input type="hidden" id="prix-8" value="23.95" />
+            </div>
+            <!-- Fin du footer de la card -->
+          </div>
+         <!-- Début de la card -->
+         <div class="card border-info mb-3" style="max-width: 18rem;">
+            <div class="card-header">Gourde en Peau de Lynx (1L)</div>
+            <div class="card-body text-info">
+                <img class="buttles" src="assets/img/gourdepeau.jpg" alt="Gourde en peau">
+            </div>
+            <!-- Début du footer de la card -->
+            <div class="card-footer text-center font-size-3">
+                <!-- Bouton ajouter au panier -->
+                <span class="prix font-italic">95,90 €</span>
+                <a href="#!" class="btn btn-block btn-primary add basketAdd" data-id="9">
+                    Ajouter au panier
+                </a>
+                <input type="hidden" id="prix-9" value="95.90" />
+            </div>
+            <!-- Fin du footer de la card -->
+        </div>
+      </div>
+      <!-- PARTIE BASE DE DONNÉES -->
+      <div class="container" id="#boutique">
+            <h3>Ma boutique !</h3>
+            <div class="row">
+                <div class="col-md-8">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <span class="toHide">Les produits</span>
+                        </div>
+                        <div class="panel-body">
+                            <!-- Premier produit eau plate -->
+                            <div class="col-md-4">
+                                <div class="panel panel-default" id="produit-1">
+                                    <div class="panel-body text-center">
+                                        <h3>Evian Premium</h3>
+                                        <span class="prix prix2">3,95 €</span>
+                                        <input type="hidden" id="prix-1" value="3.95" />
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Deuxième produit eau plate -->
+                            <div class="col-md-4">
+                                <div class="panel panel-default" id="produit-2">
+                                    <div class="panel-body text-center">
+                                        <h3>Volvic gold</h3>
+                                        <span class="prix prix2">3,75 €</span>
+                                        <input type="hidden" id="prix-2" value="3.75" />
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Troisième produit eau plate -->
+                            <div class="col-md-4">
+                                <div class="panel panel-default" id="produit-3">
+                                    <div class="panel-body text-center">
+                                        <h3>Contrex Pristine</h3>
+                                        <span class="prix prix2">2,85 €</span>
+                                        <input type="hidden" id="prix-3" value="2.85" />
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Premier produit eau pétillante -->
+                            <div class="col-md-4">
+                                <div class="panel panel-default" id="produit-4">
+                                    <div class="panel-body text-center">
+                                        <h3>Perrier Master</h3>
+                                        <span class="prix prix2">5,95 €</span>
+                                        <input type="hidden" id="prix-4" value="5.95" />
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Deuxième produit eau pétillante -->
+                            <div class="col-md-4">
+                                <div class="panel panel-default" id="produit-5">
+                                    <div class="panel-body text-center">
+                                        <h3>Salvetat Champion</h3>
+                                        <span class="prix prix2">4,95 €</span>
+                                        <input type="hidden" id="prix-5" value="4.95" />
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Troisième produit eau pétillante -->
+                            <div class="col-md-4">
+                                <div class="panel panel-default" id="produit-6">
+                                    <div class="panel-body text-center">
+                                        <h3>Badoit Privilège</h3>
+                                        <span class="prix prix2">4,45 €</span>
+                                        <input type="hidden" id="prix-6" value="4.45" />
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Premier produit conteneurs -->
+                            <div class="col-md-4">
+                                <div class="panel panel-default" id="produit-7">
+                                    <div class="panel-body text-center">
+                                        <h3>Verres à eau suprêmes (x2) (50cl)</h3>
+                                        <span class="prix prix2">6,95 €</span>
+                                        <input type="hidden" id="prix-7" value="6.95" />
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Deuxième produit conteneurs -->
+                            <div class="col-md-4">
+                                <div class="panel panel-default" id="produit-8">
+                                    <div class="panel-body text-center">
+                                        <h3>Gourde en inox V.I.P (50cl)</h3>
+                                        <span class="prix prix2">23,95 €</span>
+                                        <input type="hidden" id="prix-8" value="23.95" />
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Troisième produit conteneurs -->
+                            <div class="col-md-4">
+                                <div class="panel panel-default" id="produit-9">
+                                    <div class="panel-body text-center">
+                                        <h3>Gourde en Peau de Lynx (1L)</h3>
+                                        <span class="prix prix2">95,90 €</span>
+                                        <input type="hidden" id="prix-9" value="95.90" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <span class="toHide">Mon panier</span>
+                        </div>
+                        <div class="panel-body text-left">
+                            <div id="cart">
+                            </div>
+                            <div class="clearfix">&nbsp;</div>
+                            <a href="#" onclick="alert('Ok, on va commander !')" class="btn btn-success btn-block" id="order2">Commander !</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </main>
+      <footer>
+        <!-- Footer : Contacts et adresse -->
+          <div class="row">
+                <div class="col-sm-6 text-center">
+                    <p class="titleContacts" id="contacts">Contacts :</p>
+                    <p class="bodyContacts">contact@elements.com</p>
+                    <p class="bodyContacts">08 99 18 39 83</p>
+                </div>
+                <div class="col-sm-6 text-center">
+                    <p class="titleContacts">Adresse :</p>
+                    <p class="bodyContacts">70, rue des Jacobins</p>
+                    <p class="bodyContacts">80090 Amiens</p>
+                </div>
+          </div>
+            <div class="row">
+                <div class="col-sm-12 text-center">
+                  <!-- Button trigger modal -->
+                  <p data-toggle="modal" data-target="#exampleModal" id="legalNotice">Mentions légales</p>
 
-
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    <script src="assets/js/boutons.js"></script>
-</body>
+                  <!-- Modal -->
+                  <div class="modal" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title font-weight-bold" id="exampleModalLabel">Mentions légales</h5>
+                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                          </button>
+                        </div>
+                        <div class="modal-body">
+                          <p>Tout le contenu du présent site, incluant, de façon non limitative, les graphismes, images, textes, vidéos, animations, sons, logos, gifs et icônes ainsi que leur mise en forme sont la propriété exclusive de la société Elements à l'exception des marques, logos ou contenus appartenant à d'autres sociétés partenaires ou auteurs.
+                          Toute reproduction, distribution, modification, adaptation, retransmission ou publication, même partielle, de ces différents éléments est strictement interdite sans l'accord exprès par écrit de Natural net. Cette représentation ou reproduction, par quelque procédé que ce soit, constitue une contrefaçon sanctionnée par les articles L.3335-2
+                          et suivants du Code de la propriété intellectuelle. Le non-respect de cette interdiction constitue une contrefaçon pouvant engager la responsabilité civile et pénale du contrefacteur. En outre, les propriétaires des Contenus copiés pourraient intenter une action en justice à votre encontre.</p>
+                          <p>Pour des besoins de statistiques et d'affichage, le présent site utilise des cookies. Il s'agit de petits fichiers textes stockés sur votre disque dur afin d'enregistrer des données techniques sur votre navigation. Certaines parties de ce site ne peuvent être fonctionnelle sans l’acceptation de cookies.</p>
+                          <p>Pour toute demande d'autorisation ou d'information, veuillez nous contacter par email : contact@elements.com. Des conditions spécifiques sont prévues pour la presse.</p>
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+        </footer>
+      <!-- Optional JavaScript -->
+      <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+      <script src="assets/js/boutons.js"></script>
+      <script src="assets/js/main.js"></script>
+  </body>
 
 </html>
