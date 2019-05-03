@@ -33,7 +33,7 @@
         <!-- fin de l'alerte cookie -->
         <!-- NAVBAR -->
         <div class="container">
-            <nav class="navbar navbar-expand-sm navbar-light bg-light row">
+            <nav class="navbar navbar-expand-sm navbar-light bg-light row fixed-top">
                 <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -113,46 +113,47 @@
                         <li class="nav-item">
                             <a class="nav-link" href="#contacts">Contact</a>
                         </li>
-                        <!-- Modal -->
-                        <div class="modal fade" id="exampleModal3" tabindex="-1" role="dialog" aria-labelledby="exampleModal3Label" aria-hidden="true">
-                            <div class="modal-dialog" role="document">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <h5 class="modal-title" id="exampleModal3Label">Contenu du panier</h5>
-                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                            <span aria-hidden="true">&times;</span>
-                                        </button>
-                                    </div>
-                                    <div class="modal-body">
-                                        <!-- Contenu du module du panier -->
-                                        <div class="panel panel-default">
-                                            <div class="panel-heading">
-                                                Mon panier
-                                            </div>
-                                            <div class="panel-body text-left">
-                                                <div id="cart">
-                                                </div>
-                                                <div class="clearfix">&nbsp;</div>
-                                                <a href="#" onclick="alert('Ok, on va commander !')" class="btn btn-success btn-block" id="order">Commander !</a>
-                                                <a href="#" class="btn btn-secondary btn-block" id="emptyCart">Vider mon panier</a>
-                                            </div>
-                                        </div>
-                                        <div class="modal-footer">
-                                        </div>
-                                    </div>
-                                    <div class="modal-footer">
-                                        <!-- <button type="button" class="btn btn-secondary" data-dismiss="modal">Annuler</button>
-                                        <button type="button" class="btn btn-info">Procéder au paiement</button> -->
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+
                     </ul>
                 </div>
             </nav>
         </div>
     </header>
     <main>
+      <!-- Modal -->
+      <div class="modal fade" id="exampleModal3" tabindex="-1" role="dialog" aria-labelledby="exampleModal3Label" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                  <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModal3Label">Contenu du panier</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                      </button>
+                  </div>
+                  <div class="modal-body">
+                      <!-- Contenu du module du panier -->
+                      <div class="panel panel-default">
+                          <div class="panel-heading">
+                              Mon panier
+                          </div>
+                          <div class="panel-body text-left">
+                              <div id="cart">
+                              </div>
+                              <div class="clearfix">&nbsp;</div>
+                              <a href="#" onclick="alert('Ok, on va commander !')" class="btn btn-success btn-block" id="order">Commander !</a>
+                              <a href="#" class="btn btn-secondary btn-block" id="emptyCart">Vider mon panier</a>
+                          </div>
+                      </div>
+                      <div class="modal-footer">
+                      </div>
+                  </div>
+                  <div class="modal-footer">
+                      <!-- <button type="button" class="btn btn-secondary" data-dismiss="modal">Annuler</button>
+                      <button type="button" class="btn btn-info">Procéder au paiement</button> -->
+                  </div>
+              </div>
+          </div>
+      </div>
       <!-- Carrousel -->
         <div class="container mt-3">
             <div class="row">
