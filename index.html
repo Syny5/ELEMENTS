@@ -1,20 +1,18 @@
 <!DOCTYPE html>
 <html lang="fr">
-
-<head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/footer.css">
-    <link rel="stylesheet" href="assets/css/main.css">
-    <link rel="icon" href="assets/img/dollar.png">
-    <title>Élements</title>
-</head>
-
-<body>
+  <head>
+      <!-- Required meta tags -->
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <!-- Bootstrap CSS -->
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+      <link rel="stylesheet" href="assets/css/style.css">
+      <link rel="stylesheet" href="assets/css/footer.css">
+      <link rel="stylesheet" href="assets/css/main.css">
+      <link rel="icon" href="assets/img/dollar.png">
+      <title>Élements</title>
+  </head>
+  <body>
     <header>
         <!-- NAVBAR -->
         <div class="container">
@@ -35,46 +33,6 @@
                     <li class="nav-item">
                         <img class="nav-item ml-4" data-toggle="modal" data-target="#ConnexionModal" src="assets/img/compte.png" id="compte" alt="Icone de compte" style="width: 37px;">
                     </li>
-                    <div class="modal fade center" id="ConnexionModal" tabindex="-1" role="dialog" aria-labelledby="ConnexionModal" aria-hidden="true">
-                      <div class="modal-dialog" role="document">
-                        <div class="modal-content">
-                          <div class="modal-header">
-                            <h3 class="modal-title col-md-11">Connexion</h3>
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                              <span aria-hidden="true">&times;</span>
-                            </button>
-                          </div>
-                          <div class="container col-md-12">
-                            <button type="button" class="btn btn-primary btn-lg btn-block">Connexion avec Facebook</button>
-                            <button type="button" class="btn btn-outline-dark btn-lg btn-block">Connexion avec Google</button>
-                            <hr>
-                            <div class="container col-md-12 ">
-                              <form>
-                                <div class="form-group">
-                                  <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Adresse Email">
-                                </div>
-                                <div class="form-group">
-                                  <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Mot de passe">
-                                </div>
-                                <div class="container row">
-                                  <div class="form-group form-check">
-                                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                                    <label class="form-check-label" for="exampleCheck1">Se souvenir de moi</label>
-                                  </div>
-                                  <div class=" offset-md-2">
-                                    <small><a href="#">Afficher le mot de passe</a></small>
-                                  </div>
-                                </div>
-                              </form>
-                              <div class="center">
-                                <button type="button" class="btn btn-danger btn-lg btn-block">Connexion</button>
-                                <small class="bold"><a href="#">Mot de passe oublié ?</a></small>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
                 </ul>
                 <!-- Navbar collapse (mobile) -->
                 <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
@@ -98,13 +56,53 @@
                         <li class="nav-item">
                             <a class="nav-link" href="#contacts">Contact</a>
                         </li>
-
                     </ul>
                 </div>
             </nav>
         </div>
     </header>
     <main>
+      <!-- Modal Compte -->
+      <div class="modal fade center" id="ConnexionModal" tabindex="-1" role="dialog" aria-labelledby="ConnexionModal" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h3 class="modal-title col-md-11">Connexion</h3>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="container col-md-12">
+              <button type="button" class="btn btn-primary btn-lg btn-block">Connexion avec Facebook</button>
+              <button type="button" class="btn btn-outline-dark btn-lg btn-block">Connexion avec Google</button>
+              <hr>
+              <div class="container col-md-12 ">
+                <form>
+                  <div class="form-group">
+                    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Adresse Email">
+                  </div>
+                  <div class="form-group">
+                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Mot de passe">
+                  </div>
+                  <div class="container row">
+                    <div class="form-group form-check">
+                      <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                      <label class="form-check-label" for="exampleCheck1">Se souvenir de moi</label>
+                    </div>
+                    <div class=" offset-md-2">
+                      <small><a href="#">Afficher le mot de passe</a></small>
+                    </div>
+                  </div>
+                </form>
+                <div class="center">
+                  <button type="button" class="btn btn-danger btn-lg btn-block">Connexion</button>
+                  <small class="bold"><a href="#">Mot de passe oublié ?</a></small>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
       <!-- Modal -->
       <div class="modal fade" id="exampleModal3" tabindex="-1" role="dialog" aria-labelledby="exampleModal3Label" aria-hidden="true">
           <div class="modal-dialog" role="document">
@@ -630,6 +628,5 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <script src="assets/js/boutons.js"></script>
     <script src="assets/js/main.js"></script>
-</body>
-
+  </body>
 </html>
