@@ -1,0 +1,201 @@
+html,
+body {
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.bd-exemple {
+    height: 30em;
+}
+
+.white {
+
+    opacity: 0.9;
+    margin-top: 5em;
+    box-shadow: 10px 10px 20px 10px;
+}
+
+.collapse {
+    text-align: ;
+}
+
+h1 {
+    color: grey;
+    text-align: center;
+}
+
+li {
+    width: auto;
+}
+
+
+.us {
+    background-color: #00080D;
+    color: lightgrey;
+}
+
+hr {
+    background-color: white;
+}
+
+.greybg {
+    background-color: #C5D0D9;
+}
+
+.ongrey {
+    color: #194073;
+}
+#laptop {
+    background-image: url("../img/laptop.jpg");
+      display: flex;
+  justify-content: center;
+  align-items: center;
+    border-radius: 5px;
+	height: 170px;
+	width: 220px;
+    color: white;
+    font-weight: bold;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    background-position: center;
+
+    background: radial-gradient(ellipse at center, rgba(0, 0, 0, .7) 0%, rgba(0, 0, 0, 0) 98%), center top / cover url("../img/laptop.jpg");
+
+    text-shadow: 3px 3px 5px black;
+}
+#waterdrop {
+    background-image: url("../img/waterdrop.jpg");
+      display: flex;
+  justify-content: center;
+  align-items: center;
+    border-radius: 5px;
+	height: 170px;
+	width: 220px;
+    color: white;
+    font-weight: bold;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    background-position: center;
+
+    background: radial-gradient(ellipse at center, rgba(0, 0, 0, .7) 0%, rgba(0, 0, 0, 0) 98%), center top / cover url("../img/waterdrop.jpg");
+
+    text-shadow: 3px 3px 5px black;
+}
+#montagne {
+    background-image: url("../img/montagne.jpg");
+      display: flex;
+  justify-content: center;
+  align-items: center;
+    border-radius: 5px;
+	height: 170px;
+	width: 220px;
+    color: white;
+    font-weight: bold;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    background-position: center;
+
+    background: radial-gradient(ellipse at center, rgba(0, 0, 0, .7) 0%, rgba(0, 0, 0, 0) 98%), center top / cover url("../img/montagne.jpg");
+
+    text-shadow: 3px 3px 5px black;
+}
+#gallet {
+    background-image: url("../img/gallet.jpg");
+      display: flex;
+  justify-content: center;
+  align-items: center;
+    border-radius: 5px;
+	height: 170px;
+	width: 220px;
+    color: white;
+    font-weight: bold;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    background-position: center;
+
+    background: radial-gradient(ellipse at center, rgba(0, 0, 0, .7) 0%, rgba(0, 0, 0, 0) 98%), center top / cover url("../img/gallet.jpg");
+
+    text-shadow: 3px 3px 5px black;
+}
+ #alertcookie{
+  background-color: #DCDCDC    ;
+  font-size : 12px;
+}
+
+.inputPlusLess{
+  width: 30%;
+}
+.minusIcons{
+  width: 8.5%
+}
+
+.plusIcons{
+  width: 8.5%
+}
+
+.basketAdd{
+  margin-top: 10px;
+  background-color: black;
+  border-radius: 0px;
+  font-weight: bold;
+  border-color: black;
+}
+
+.price{
+  font-style: italic;
+  color: grey;
+}
+
+.total{
+    font-style: italic;
+    color: grey;
+}
+
+.priceValue{
+    font-style: italic;
+    color: grey;
+    margin-left: 5px;
+}
+
+.totalValue{
+    font-style: italic;
+    color: grey;
+    margin-left: 5px;
+}
+
+.euro{
+  font-style: italic;
+  color: grey;
+  margin-left: 5px;
+}
+
+span.prix {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+  display:block;
+}
+
+.img-responsive {
+  margin-bottom: 10px;
+}
+
+.buttles{
+  width: 80%;
+}
+
+.card-header{
+  font-weight: bold;
+}
+
+.titleCategories{
+  color: grey;
+  font-weight: bold;
+}
+#engagement {
+  font-size: 17px;
+text-shadow: 3px 3px 5px black;
+font-family:"Segoe print", Arial, Helvetica, sans-serif;
+color:white;
+font-weight:lighter;
+-moz-box-shadow: 2px 2px 6px #888;
+text-align:center;
+display:block;
+line-height:92px;
+}
