@@ -48,8 +48,48 @@
                 <ul class="navbar-nav mr-auto">
                     <!-- Compte -->
                     <li class="nav-item">
-                        <img class="nav-item ml-4" src="assets/img/compte.png" id="compte" alt="Icone de compte" style="width: 37px;">
+                        <img class="nav-item ml-4" data-toggle="modal" data-target="#ConnexionModal" src="assets/img/compte.png" id="compte" alt="Icone de compte" style="width: 37px;">
                     </li>
+                    <div class="modal fade center" id="ConnexionModal" tabindex="-1" role="dialog" aria-labelledby="ConnexionModal" aria-hidden="true">
+                      <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h3 class="modal-title col-md-11">Connexion</h3>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                              <span aria-hidden="true">&times;</span>
+                            </button>
+                          </div>
+                          <div class="container col-md-12">
+                            <button type="button" class="btn btn-primary btn-lg btn-block">Connexion avec Facebook</button>
+                            <button type="button" class="btn btn-outline-dark btn-lg btn-block">Connexion avec Google</button>
+                            <hr>
+                            <div class="container col-md-12 ">
+                              <form>
+                                <div class="form-group">
+                                  <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Adresse Email">
+                                </div>
+                                <div class="form-group">
+                                  <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Mot de passe">
+                                </div>
+                                <div class="container row">
+                                  <div class="form-group form-check">
+                                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                    <label class="form-check-label" for="exampleCheck1">Se souvenir de moi</label>
+                                  </div>
+                                  <div class=" offset-md-2">
+                                    <small><a href="#">Afficher le mot de passe</a></small>
+                                  </div>
+                                </div>
+                              </form>
+                              <div class="center">
+                                <button type="button" class="btn btn-danger btn-lg btn-block">Connexion</button>
+                                <small class="bold"><a href="#">Mot de passe oublié ?</a></small>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
                 </ul>
                 <!-- Navbar collapse (mobile) -->
                 <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
@@ -102,7 +142,7 @@
                                     </div>
                                     <div class="modal-footer">
                                         <!-- <button type="button" class="btn btn-secondary" data-dismiss="modal">Annuler</button>
-                      <button type="button" class="btn btn-info">Procéder au paiement</button> -->
+                                        <button type="button" class="btn btn-info">Procéder au paiement</button> -->
                                     </div>
                                 </div>
                             </div>
@@ -113,6 +153,7 @@
         </div>
     </header>
     <main>
+      <!-- Carrousel -->
         <div class="container mt-3">
             <div class="row">
                 <div id="carouselExampleIndicators" class=" carousel slide" data-ride="carousel">
