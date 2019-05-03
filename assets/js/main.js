@@ -9,4 +9,7 @@ $(function(){
     $('.panel-body').empty();
     location.reload();
   });
+  $('.closeCookie').on('click', function(){
+    $('#alertcookie').hide();
+  });
 });
