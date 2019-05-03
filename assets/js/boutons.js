@@ -47,7 +47,6 @@ $(function() {
                     title: title,
                     price: price
                 }
-
                 cart.addProduct(product);
                   // "Quand on ajoute un produit, on l'affiche dans le panier"
                   // Pour cela, nous allons devoir indiquer qu'il doit s'afficher dès le moment où l'on clique sur le bouton "ajouter au panier"
